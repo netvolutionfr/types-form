@@ -12,23 +12,49 @@
 <div class="container">
 <form>
     <div class="mb-3">
-        <label for="text" class="form-label">Text</label>
-        <input type="text" class="form-control" id="text">
+        <select class="form-select" aria-label="Civilité">
+            <option selected>Choisissez une civilité</option>
+            <option value="1">M.</option>
+            <option value="2">Mme</option>
+            <option value="3">Autre</option>
+        </select>
     </div>
     <div class="mb-3">
-        <label for="number" class="form-label">Number</label>
-        <input type="number" class="form-control" id="number">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" name="nom">
+    </div>
+    <div class="mb-3">
+        <label for="prenom" class="form-label">Prénom</label>
+        <input type="text" class="form-control" id="prenom" name="prenom">
     </div>
     <div class="mb-3">
         <label for="email" class="form-label">Email</label>
         <input type="email" class="form-control" id="email">
     </div>
     <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password">
+        <label for="date-naissance" class="form-label">Date de naissance</label>
+        <input type="date" class="form-control" id="date-naissance" name="date-naissance">
     </div>
     <div class="mb-3">
-        <label for="tel" class="form-label">Tel</label>
+        <label for="address1" class="form-label">Adresse 1</label>
+        <input type="text" class="form-control" id="address1" name="address1">
+    </div>
+    <div class="mb-3">
+        <label for="address2" class="form-label">Adresse 2</label>
+        <input type="text" class="form-control" id="address2" name="address2">
+    </div>
+    <div class="row mb-3">
+        <div class="col-3">
+            <label for="zip" class="form-label">Code postal</label>
+            <input type="text" class="form-control" id="zip">
+        </div>
+        <div class="col-9">
+            <label for="city" class="form-label">Ville</label>
+            <input type="text" class="form-control" id="city">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="tel" class="form-label">Téléphone</label>
         <input type="tel" class="form-control" id="tel">
     </div>
 </form>
